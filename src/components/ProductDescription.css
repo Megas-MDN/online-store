@@ -1,0 +1,98 @@
+.detail-container {
+  border: 1px solid red;
+  margin: 1rem auto;
+  padding: 30px;
+}
+
+.avaliacao {
+  align-items: center;
+  border: 1px solid red;
+  display: grid;
+  gap: 10px;
+  grid-template-areas: 'email nota'
+    'comentario comentario'
+    'btn btn';
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 30px;
+}
+
+.email {
+  grid-area: email;
+}
+
+.nota {
+  display: flex;
+  gap: 15px;
+  grid-area: nota;
+  padding: 10px;
+}
+
+.comentario {
+  grid-area: comentario;
+}
+
+.btn {
+  grid-area: btn;
+}
+
+textarea {
+  resize: none;
+}
+
+.card-detalhes {
+  align-items: center;
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+
+  /* justify-content: center; */
+}
+
+.image-detalhes {
+  border: 1px solid red;
+  display: flex;
+  gap: 50px;
+  justify-content: space-around;
+  padding: 10px;
+  width: 95%;
+}
+
+.image-detalhes > img {
+
+  /* flex: 2; */
+  width: 35%;
+}
+
+.images-container {
+  text-align: center;
+  width: 40%;
+}
+
+.images-container img {
+  max-height: 410px;
+  max-width: 100%;
+}
+
+.display-img {
+  flex: 2;
+  margin-top: 20px;
+}
+
+.flex-linha {
+  border: 4px solid red;
+  display: flex;
+  gap: 10px;
+  height: 90px;
+  max-width: 100%;
+
+  /* visibility: hidden; */
+  overflow: auto;
+
+  /* -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar; */
+
+
+  /* width: 95%; */
+}

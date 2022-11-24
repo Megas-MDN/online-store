@@ -1,0 +1,10 @@
+.titulo {
+  background: linear-gradient(150deg, #84e, #b07dfb);
+  border-radius: 10px;
+  box-shadow: 7px 7px 20px 0 #b07dfb;
+  color: white;
+  font-size: 2rem;
+  margin: 1.5rem auto;
+  padding: 10px 100px;
+  width: fit-content;
+}

@@ -1,0 +1,238 @@
+.home-container {
+  background: rgb(34, 33, 33);
+  border: 1px solid #84e;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px 0 rgb(126, 53, 235);
+  margin: 1.5rem auto;
+  max-width: 930px;
+  padding: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: rgb(221, 221, 221);
+  margin: auto;
+  text-decoration: none;
+}
+
+.inputs {
+  align-items: center;
+
+  /* border: 1px solid red; */
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 710px;
+
+  /* width: 95%; */
+}
+
+.inputs > input {
+  border-radius: 7px;
+  flex: 2;
+  font-size: 1.05rem;
+  padding: 5px;
+
+  /* width: 60%; */
+}
+
+.cat {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.buttons-category {
+  border-radius: 5px;
+  height: 40px;
+  width: 130px;
+}
+
+.produtos-e-pesquisa {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.lists {
+  display: flex;
+  gap: 20px;
+}
+
+.list-product {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.empty {
+  color: rgb(228, 228, 228);
+  grid-column: 1 / -1;
+  padding: 10px;
+}
+
+.material-symbols-outlined {
+  background: linear-gradient(150deg, #84e, #b07dfb);
+  border-radius: 30px;
+  box-shadow: 2px 2px 20px 0 rgb(126, 53, 235);
+  font-size: 2rem;
+  font-variation-settings: 'FILL' 0 , 'wght' 400 , 'GRAD' 0 , 'opsz' 48;
+  padding: 10px;
+}
+
+.material-symbols-outlined:hover {
+  background: linear-gradient(150deg, #e444bc, #b07dfb);
+}
+
+.style-p-search {
+  color: rgb(228, 228, 228);
+  padding: 15px;
+}
+
+.card {
+  background-color: rgb(59, 55, 55);
+  border-radius: 4px;
+  box-shadow: 3px 3px 10px 0 #84e;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+}
+
+.frete-gratis {
+
+  /* background: green; */
+  background: linear-gradient(155deg, #e444bc, rgb(104, 3, 117));
+  border-radius: 7px 7px 0 0;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.25rem;
+
+  /* border-radius: 15px 15px 0 0; */
+  padding: 5px;
+  position: absolute;
+  right: 0;
+  text-transform: uppercase;
+
+  /* rotate: 45deg; */
+  top: 0;
+  width: 200px;
+}
+
+.frete-padrao {
+  background: #84e;
+  border-radius: 7px 7px 0 0;
+  color: white;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+
+  /* border-radius: 15px 15px 0 0; */
+  opacity: 0.7;
+  padding: 5px;
+  position: absolute;
+  right: 0;
+  text-transform: uppercase;
+
+  /* rotate: 45deg; */
+  top: 0;
+  width: 200px;
+}
+
+.title-p {
+  height: 90px;
+  margin-top: 30px;
+  overflow: hidden;
+  width: 180px;
+}
+
+.img {
+  border-radius: 20px;
+  padding: 10px;
+  width: 100%;
+}
+
+.buttons {
+  background: linear-gradient(50deg, #84e, #b07dfb);
+  border: #b07dfb;
+  border-radius: 30px;
+  box-shadow: 2px 2px 5px 0 #84e;
+  color: azure;
+  height: auto;
+  padding: 5px;
+  text-align: center;
+}
+
+.Button-add {
+  padding: 20px;
+}
+
+.buttons-div-product {
+  height: auto;
+  margin: 10px;
+  width: auto;
+}
+
+.buttons:hover {
+  background: linear-gradient(50deg, #e444bc, #b07dfb);
+}
+
+.buttons:active {
+  background: linear-gradient(50deg, #e444bc, #b07dfb);
+  transform: translateY(4px);
+}
+
+.bag {
+  position: relative;
+}
+
+.cart-size {
+  background-color: red;
+  border-radius: 50%;
+  color: white;
+  font-weight: 600;
+  height: 25px;
+  padding: 3px;
+  position: absolute;
+  right: -8px;
+  text-align: center;
+  top: -5px;
+  width: 25px;
+}
+
+.card:hover .frete-gratis {
+  animation: gradient 5s ease infinite;
+  background: linear-gradient(-45deg, #ee7752, rgb(104, 3, 117), #e444bc, #95349e);
+  background-size: 200% 200%;
+}
+
+.card:hover {
+  box-shadow: 0 5px 20px #84e;
+  transform: translateY(-10px);
+}
+
+@keyframes gradient {
+
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+
+}
+
